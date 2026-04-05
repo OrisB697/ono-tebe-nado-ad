@@ -1,1 +1,36 @@
 /* место для вашего кода */
+header {
+   display: grid;
+   grid-template-columns: 1fr min-content 1fr;
+   align-items: center;
+   color: black;
+   padding: 50px, 92px, 50px, 96px;
+}
+
+footer {
+
+}
+
+.logo-black {
+   height: 105px;
+   width: 148px;
+}
+
+.header-menu {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   list-style: circle;
+}
+
+.cover {
+
+}
+
+.lots {
+
+}
+
+.about {
+
+}
