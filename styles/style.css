@@ -1,36 +1,206 @@
-/* место для вашего кода */
+
+/* Шапка */
 header {
-   display: grid;
-   grid-template-columns: 1fr min-content 1fr;
-   align-items: center;
-   color: black;
-   padding: 50px, 92px, 50px, 96px;
-}
-
-footer {
-
-}
-
-.logo-black {
-   height: 105px;
-   width: 148px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: aqua;
+  padding: 92px 50px 96px 50px;
 }
 
 .header-menu {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
+  display: flex;
+  gap: 28px;
+}
+
+.sub-pages {
    list-style: circle;
+   display: flex;
+   gap: 28px;
+}
+.sub-pages li {
+  text-decoration: underline;
 }
 
+.header-menu a {
+  text-decoration: none;
+  color: #1c1a1b;
+  font-size: 18px;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.header-menu a:hover {
+  border-bottom-color: #1c1a1b;
+}
+
+.logo-black img {
+   margin-left: 36.52px;
+  height: 105px;
+  width: auto;
+}
+
+.adress {
+   margin-left: auto;
+}
+
+/* Блок cover (первый экран) */
 .cover {
-
+  background-color: #e6e3de;
+  text-align: center;
+  padding: 100px 20px 120px;
+  margin: 40px 50px 0 50px;
+  position: relative;
 }
 
+.cover h1 {
+  font-size: 90px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: #1c1a1b;
+  margin-bottom: 30px;
+  line-height: 1;
+}
+
+.cover .description {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cover .description p {
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.cover button {
+  background-color: #1c1a1b;
+  color: white;
+  border: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 15px 40px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s;
+}
+
+.cover button:hover {
+  background-color: #3f3b3c;
+}
+
+/* Секция "Лоты" */
 .lots {
-
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 50px;
 }
 
-.about {
+.lots ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.lots li {
+  flex: 1 1 280px;
+  background-color: #f5f3f0;
+  padding: 30px 25px;
+  transition: transform 0.2s;
+}
+
+.lots li:hover {
+  transform: translateY(-6px);
+}
+
+.lots a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.lots article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lots article::before {
+  content: "📷";
+  font-size: 48px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.lots h3 {
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.lots p {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #2d2a2b;
+}
+
+/* Секция "Об аукционе" */
+.about {
+  background-color: #faf8f5;
+  padding: 70px 50px;
+  max-width: 1200px;
+  margin: 40px auto 80px;
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.about > div:first-child {
+  flex: 0 0 200px;
+  text-align: center;
+  font-size: 80px;
+}
+
+.about > div:last-child {
+  flex: 1;
+}
+
+.about h2 {
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Подвал */
+footer {
+  background-color: #1c1a1b;
+  color: #e6e3de;
+  padding: 50px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+/* Адаптивность */
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cover h1 {
+    font-size: 48px;
+  }
+
+  .about {
+    flex-direction: column;
+  }
 }
