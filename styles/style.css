@@ -55,7 +55,7 @@ header {
 }
 /* Блок cover (первый экран) */
 .cover {
-  background-color: #e6e3de;
+  background-color: #8e2680;
   height: 757px;
    background-image: linear-gradient(
     rgba(0, 0, 0, 0.6),
@@ -69,7 +69,7 @@ header {
 .ono-tebe-nado {
    display: flex;
    justify-content: space-between;
-   margin: 0px 50px 207px 50px;
+   margin: 0px 50px 0px 50px;
    height: 385px;
    width: 1000px;
    position: relative;
@@ -102,10 +102,33 @@ header {
 
 }
 
-.main-cover-image {
-   height: 757px;
-   object-fit: cover;
-   filter: brightness(0.4);
+.description {
+   display: flex;
+   margin: 106px 50px 50px 50px;
+   height: 51px;
+   width: 1000px;
+   justify-content: space-between;
+}
+
+.subline {
+   position: relative;
+   align-self: center;
+   text-transform: uppercase;
+   color: white;
+   word-spacing: 90%;
+   font-size: 22px;
+}
+
+.place-a-bat {
+   position:relative;
+   border-width: 1px;
+   border-style: solid;
+   border-color: white;
+   width: 256px;
+   background-color: transparent;
+   text-transform: uppercase;
+   color: white;
+   font-size: 22px;
 }
 
 .cover h1 {
