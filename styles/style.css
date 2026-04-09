@@ -4,8 +4,8 @@ header {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  background-color: aqua;
   padding: 92px 50px 96px 50px;
+  background-color: white;
 }
 
 .header-menu {
@@ -44,50 +44,45 @@ header {
    margin-left: auto;
 }
 
+.adress-bar {
+   list-style: none;
+   width: 240px
+}
+
+.phone-number,
+.email-adress {
+  text-decoration: underline;
+}
 /* Блок cover (первый экран) */
 .cover {
   background-color: #e6e3de;
-  text-align: center;
-  padding: 100px 20px 120px;
-  margin: 40px 50px 0 50px;
-  position: relative;
+
+}
+
+.main-cover-image {
+   height: 757px;
+   object-fit: cover;
+   filter: brightness(0.4);
 }
 
 .cover h1 {
-  font-size: 90px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 6px;
-  color: #1c1a1b;
-  margin-bottom: 30px;
-  line-height: 1;
+
 }
 
 .cover .description {
-  max-width: 700px;
-  margin: 0 auto;
+
 }
 
 .cover .description p {
-  font-size: 22px;
-  text-transform: uppercase;
-  margin-bottom: 40px;
+
 }
 
 .cover button {
-  background-color: #1c1a1b;
-  color: white;
-  border: none;
-  font-size: 18px;
-  text-transform: uppercase;
-  padding: 15px 40px;
-  cursor: pointer;
-  font-family: inherit;
-  transition: background 0.2s;
+
 }
 
 .cover button:hover {
-  background-color: #3f3b3c;
+
 }
 
 /* Секция "Лоты" */
