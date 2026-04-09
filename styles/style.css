@@ -133,7 +133,7 @@ header {
 
 /* Секция "Лоты" */
 .lots {
-   background-color: aqua;
+   background-color: white;
    width: 1052px;
    height: 723px;
    margin-top: 180px;
@@ -148,6 +148,30 @@ header {
    font-weight: 700;
 }  
 
+.first-lot {
+   background-image:linear-gradient(
+    rgba(0, 0, 0, 0.6)
+  ), url(../images/card-lot-01.jpg);
+   background-position: center;
+   background-size: auto 100%;
+}
+
+.second-lot {
+   background-image:linear-gradient(
+    rgba(0, 0, 0, 0.6)
+  ), url(../images/card-lot-02.jpg);
+   background-position: center;
+   background-size: auto 100%;
+}
+
+.third-lot {
+   background-image:linear-gradient(
+    rgba(0, 0, 0, 0.6)
+  ), url(../images/card-lot-03.jpg);
+   background-position: center;
+   background-size: auto 100%;
+}
+
 .lots ul {
    margin-top: 27px;
    display: grid ;
@@ -161,10 +185,8 @@ header {
    background-color: red;
 }
 
-.lots li:hover {
-}
-
 .lots a {
+   text-decoration: none;  
 
 }
 
@@ -176,37 +198,45 @@ header {
    height: 100%;
 }
 
-.lots article::before {
-
-}
-
 .lots h3 {
    margin-top: 48px;
    width: 254px;
    height: 82px;
    text-transform: uppercase;
+   color: white;
+   text-decoration: underline;
+   font-weight: 700;
+   font-size: 22px;
+   text-decoration-style: solid;
 }
 
 .lots ul p {
    width: 254px;
    margin-bottom: 48px;
+   color: white;
+   text-decoration: none;
+   font-size: 20px;
+   line-height: 120%;
+   font-weight: 400;
+}
+
+.look-more {
+   display: block;
+   margin-top:30px;
+   margin-left: 40px;
+   width: 192px;
+   font-weight: 400;
+   font-size: 20px;
 }
 
 /* Секция "Об аукционе" */
 .about {
-  background-color: #faf8f5;
-  padding: 70px 50px;
-  max-width: 1200px;
-  margin: 40px auto 80px;
-  display: flex;
-  gap: 60px;
-  flex-wrap: wrap;
-}
-
-.about > div:first-child {
-  flex: 0 0 200px;
-  text-align: center;
-  font-size: 80px;
+   width: 1052px;
+   height: 595px;
+   background-color: white;
+   margin-left: 24px;
+   margin-top: 120px;
+   display: flex;
 }
 
 .about > div:last-child {
@@ -214,39 +244,74 @@ header {
 }
 
 .about h2 {
-  font-size: 48px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 30px;
+   font-size: 40px;
+   text-transform: uppercase;
+   font-weight: 700;
+   margin-bottom: 100px;
 }
 
 .about p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 20px;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 24px;
+}
+
+.first-p {
+   margin-bottom: 24px;
+}
+
+.about-text {
+   margin-top: 133px;
+   margin-left: 72px;
+}
+
+.circle {
+  width: 240px;
+  height: 240px;
+  background-color: black;
+  margin-top: 35px;
+  margin-left: 47px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-white {
+   height: 114px;
+   width: 148px;
 }
 
 /* Подвал */
 footer {
-  background-color: #1c1a1b;
-  color: #e6e3de;
-  padding: 50px;
-  text-align: center;
-  margin-top: 60px;
+  background-color: white;
+  margin-top: 180px;
+  color: black;
+  width: 1100px;
+  height: 180px;
+  display: flex;
+   justify-content: space-between;
 }
 
-/* Адаптивность */
-@media (max-width: 800px) {
-  header {
-    flex-direction: column;
-    gap: 20px;
-  }
+footer nav {
+   width: 163.9px;
+   height: 64px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
 
-  .cover h1 {
-    font-size: 48px;
-  }
+footer a {
+   
+}
 
-  .about {
-    flex-direction: column;
-  }
+.adress-bottom {
+   margin-left: 50px;
+}
+
+.merch {
+   width: 240px;
+   height: 48px;
+   display: flex;
+   margin-right: 50px;
 }
