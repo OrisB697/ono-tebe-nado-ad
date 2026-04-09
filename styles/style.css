@@ -1,44 +1,252 @@
-/* место для вашего кода */
+
+/* Шапка */
 header {
-   display: grid;
-   grid-template-columns: 1fr min-content 1fr;
-   align-items: center;
-   color: black;
-   padding: 50px, 92px, 50px, 96px;
-   background-color: gray;
-}
-
-footer {
-
-}
-
-ul {
-   display: flex;
-}
-
-li {
-   list-style: circle;
-}
-
-.logo-black {
-   height: 105px;
-   width: 148px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 92px 50px 96px 50px;
+  background-color: white;
 }
 
 .header-menu {
+  display: flex;
+  gap: 28px;
+}
+
+.sub-pages {
+   list-style: circle;
    display: flex;
-   flex-direction: row;
-   justify-content: space-around;
+   gap: 28px;
+}
+.sub-pages li {
+  text-decoration: underline;
 }
 
+.header-menu a {
+  text-decoration: none;
+  color: #1c1a1b;
+  font-size: 18px;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.header-menu a:hover {
+  border-bottom-color: #1c1a1b;
+}
+
+.logo-black img {
+   margin-left: 36.52px;
+  height: 105px;
+  width: auto;
+}
+
+.adress {
+   margin-left: auto;
+}
+
+.adress-bar {
+   list-style: none;
+   width: 240px
+}
+
+.phone-number,
+.email-adress {
+  text-decoration: underline;
+}
+/* Блок cover (первый экран) */
 .cover {
+  background-color: #8e2680;
+  height: 757px;
+   background-image: linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+  ),url(../images/cover.jpg);
+   background-size: cover;
+   margin: 0;
+   padding-top: 165px;
+}
+
+.ono-tebe-nado {
+   display: flex;
+   justify-content: space-between;
+   margin: 0px 50px 0px 50px;
+   height: 385px;
+   width: 1000px;
+   position: relative;
+}
+
+.ONO {
+   color: white;
+   font-size: 100px;
+   align-self: flex-start;
+   font-weight: bold;
+   letter-spacing: 30%;
+}
+
+.TEBE {
+   color: white;
+   font-size: 100px;
+   align-self: center;
+   font-weight: bold;
+   letter-spacing: 30%;
+}
+
+.NADO {
+   color: white;
+   font-size: 100px;
+   align-self: flex-end;
+   font-weight: bold;
+   letter-spacing: 30%;
+   position:relative;
+   right: 90px;
 
 }
 
+.description {
+   display: flex;
+   margin: 106px 50px 50px 50px;
+   height: 51px;
+   width: 1000px;
+   justify-content: space-between;
+}
+
+.subline {
+   position: relative;
+   align-self: center;
+   text-transform: uppercase;
+   color: white;
+   word-spacing: 90%;
+   font-size: 22px;
+}
+
+.place-a-bat {
+   position:relative;
+   border-width: 1px;
+   border-style: solid;
+   border-color: white;
+   width: 256px;
+   background-color: transparent;
+   text-transform: uppercase;
+   color: white;
+   font-size: 22px;
+}
+
+/* Секция "Лоты" */
 .lots {
+   background-color: aqua;
+   width: 1052px;
+   height: 723px;
+   margin-top: 180px;
+   margin-left: 24px;
+}
+
+.lots-title {
+   margin-left: 40px;
+   text-transform: uppercase;
+   font-style: bold;
+   font-size: 40px;
+   font-weight: 700;
+}  
+
+.lots ul {
+   margin-top: 27px;
+   display: grid ;
+   grid-template-columns: 334px 334px 334px;
+   grid-template-rows: 596px;
+   gap: 25px;
+}
+
+.lots li {
+   list-style: none;
+   background-color: red;
+}
+
+.lots li:hover {
+}
+
+.lots a {
 
 }
 
-.about {
+.lots article {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   height: 100%;
+}
 
+.lots article::before {
+
+}
+
+.lots h3 {
+   margin-top: 48px;
+   width: 254px;
+   height: 82px;
+   text-transform: uppercase;
+}
+
+.lots ul p {
+   width: 254px;
+   margin-bottom: 48px;
+}
+
+/* Секция "Об аукционе" */
+.about {
+  background-color: #faf8f5;
+  padding: 70px 50px;
+  max-width: 1200px;
+  margin: 40px auto 80px;
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.about > div:first-child {
+  flex: 0 0 200px;
+  text-align: center;
+  font-size: 80px;
+}
+
+.about > div:last-child {
+  flex: 1;
+}
+
+.about h2 {
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Подвал */
+footer {
+  background-color: #1c1a1b;
+  color: #e6e3de;
+  padding: 50px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+/* Адаптивность */
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cover h1 {
+    font-size: 48px;
+  }
+
+  .about {
+    flex-direction: column;
+  }
 }
