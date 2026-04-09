@@ -56,6 +56,49 @@ header {
 /* Блок cover (первый экран) */
 .cover {
   background-color: #e6e3de;
+  height: 757px;
+   background-image: linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+  ),url(../images/cover.jpg);
+   background-size: cover;
+   margin: 0;
+   padding-top: 165px;
+}
+
+.ono-tebe-nado {
+   display: flex;
+   justify-content: space-between;
+   margin: 0px 50px 207px 50px;
+   height: 385px;
+   width: 1000px;
+   position: relative;
+}
+
+.ONO {
+   color: white;
+   font-size: 100px;
+   align-self: flex-start;
+   font-weight: bold;
+   letter-spacing: 30%;
+}
+
+.TEBE {
+   color: white;
+   font-size: 100px;
+   align-self: center;
+   font-weight: bold;
+   letter-spacing: 30%;
+}
+
+.NADO {
+   color: white;
+   font-size: 100px;
+   align-self: flex-end;
+   font-weight: bold;
+   letter-spacing: 30%;
+   position:relative;
+   right: 90px;
 
 }
 
