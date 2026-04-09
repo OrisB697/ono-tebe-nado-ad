@@ -5,10 +5,19 @@ header {
    align-items: center;
    color: black;
    padding: 50px, 92px, 50px, 96px;
+   background-color: gray;
 }
 
 footer {
 
+}
+
+ul {
+   display: flex;
+}
+
+li {
+   list-style: circle;
 }
 
 .logo-black {
@@ -20,7 +29,6 @@ footer {
    display: flex;
    flex-direction: row;
    justify-content: space-around;
-   list-style: circle;
 }
 
 .cover {
